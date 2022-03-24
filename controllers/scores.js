@@ -44,8 +44,6 @@ router.post('/',  (req, res) => {
     const dbRef = ref(database, '/jetpack_score/leaderBoard')
     if(Object.entries(req.body).length !== 0){
         set(dbRef, req.body)
-    
-        console.log(req.body)
         res.send(`successfully saved`)
     }else{
         res.send('No data received')
