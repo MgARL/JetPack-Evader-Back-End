@@ -15,7 +15,7 @@ const JETPACK_URL =  process.env.JETPACK_URL
 // cors
 app.use(
     cors({
-        origin: [JETPACK_URL, DEV_URL],
+        origin: [ JETPACK_URL, DEV_URL]
     })
 )
 
